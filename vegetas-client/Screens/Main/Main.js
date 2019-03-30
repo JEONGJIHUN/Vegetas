@@ -20,6 +20,7 @@ import geolib from 'geolib';
 import restRadius from './MainRestRadius';
 import MainRestaurantInfo from './MainRestaurantInfo';
 import styles from './MainCss';
+import * as constants from '../../constants';
 
 const API_KEY = '0597f5619d0de8485e22c9067ab5d428';
 
@@ -104,7 +105,7 @@ export default class Main extends React.Component {
     const { navigation } = this.props;
     const { email } = navigation.state.params;
     const arr = [];
-    const datas = await axios.post('http://52.79.109.78:3000/res/join', {
+    const datas = await axios.post(constants.API_RES_JOIN_PATH, {
       email,
     });
 
@@ -165,7 +166,7 @@ export default class Main extends React.Component {
   };
 
   filetedVegLevel = async (vegType) => {
-    const res = await axios.post('http://52.79.109.78:3000/res/getRes', {
+    const res = await axios.post(constants.API_RES_GET_RES_PATH, {
       vegLevel: vegType,
     });
     this.setState({
@@ -206,7 +207,7 @@ export default class Main extends React.Component {
     const { vegLevel } = navigation.state.params;
 
     axios
-      .post('http://52.79.109.78:3000/res/search', {
+      .post(constants.API_RES_SEARCH_PATH, {
         query: searchValue,
         vegLevel,
       })

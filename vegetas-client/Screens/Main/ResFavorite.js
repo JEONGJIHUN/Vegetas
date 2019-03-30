@@ -4,6 +4,7 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import MainRestaurantInfo from './MainRestaurantInfo';
 import styles from './ResFavoriteCss';
+import API_RES_JOIN_PATH from '../../constants';
 
 export default class ResFavorites extends React.Component {
   static navigationOptions = {
@@ -28,7 +29,7 @@ export default class ResFavorites extends React.Component {
     const { navigation } = this.props;
     const { email } = navigation.state.params;
     const arr = [];
-    const datas = await axios.post('http://52.79.109.78:3000/res/join', {
+    const datas = await axios.post(API_RES_JOIN_PATH, {
       email,
     });
 

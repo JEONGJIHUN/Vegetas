@@ -10,6 +10,7 @@ import {
 } from 'react-native-responsive-screen';
 import axios from 'axios';
 import styles from './RestaurantDetailsCss';
+import * as constants from '../../constants';
 
 export default class RestaurantDetails extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -77,7 +78,7 @@ export default class RestaurantDetails extends React.Component {
     let flag;
 
     try {
-      await axios.post('http://52.79.109.78:3000/res/createJoin', {
+      await axios.post(constants.API_RES_CREATE_JOIN_PATH, {
         resName: name,
         email,
       });
@@ -92,7 +93,7 @@ export default class RestaurantDetails extends React.Component {
     }
     if (flag) {
       flag = false;
-      await axios.post('http://52.79.109.78:3000/res/delete', {
+      await axios.post(constants.API_RES_DELETE_PATH, {
         resName: name,
         email,
       });

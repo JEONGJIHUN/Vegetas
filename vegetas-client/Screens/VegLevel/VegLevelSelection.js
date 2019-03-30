@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import VegLevelSelectionButton from './VegLevelSelectionButton';
 import styles from './VegLevelSelectionCss';
+import * as constants from '../../constants';
 
 export default class VegLevelSelection extends React.Component {
   static navigationOptions = {
@@ -32,7 +33,7 @@ export default class VegLevelSelection extends React.Component {
     const { navigation } = this.props;
 
     axios
-      .post('http://52.79.109.78:3000/users/vegLevel', {
+      .post(constants.API_USERS_VEGLEVEL_PATH, {
         email: emailPosition,
         vegLevel: vegTypeName,
         token: await AsyncStorage.getItem('gunbaam'), // 토큰을 서버로 보냄 . async/await 를 사용해 가져와야함.
@@ -40,7 +41,7 @@ export default class VegLevelSelection extends React.Component {
       .then(async () => {
         // async await 사용함으로서 A 까지 다 진행되고 B 로 넘어간다.
         await axios
-          .post('http://52.79.109.78:3000/res/getRes', {
+          .post(constants.API_RES_GET_RES_PATH, {
             vegLevel: vegTypeName,
           })
           .then((res) => {

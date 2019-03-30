@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './SignUpCss';
+import API_USER_SIGNUP_PATH from '../../constants';
 
 class SignUp extends React.Component {
   static navigationOptions = {
@@ -38,7 +39,7 @@ class SignUp extends React.Component {
     const { navigation } = this.props;
     const { name, email, password } = this.state;
     axios
-      .post('http://52.79.109.78:3000/users/signUp', {
+      .post(API_USER_SIGNUP_PATH, {
         name,
         email,
         password,

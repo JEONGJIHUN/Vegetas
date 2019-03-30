@@ -1,0 +1,11 @@
+export const API_HOST = 'http://ec2-13-209-21-19.ap-northeast-2.compute.amazonaws.com:3000';
+export const API_USER_PATH = `${API_HOST}/users`;
+export const API_USER_SIGNIN_PATH = `${API_HOST}/users/signIn`;
+export const API_USER_PWUDATE_PATH = `${API_HOST}/users/pwUpdate`;
+export const API_USER_SIGNUP_PATH = `${API_HOST}/users/signUp`;
+export const API_USERS_VEGLEVEL_PATH = `${API_HOST}/users/vegLevel`;
+export const API_RES_JOIN_PATH = `${API_HOST}/res/join`;
+export const API_RES_GET_RES_PATH = `${API_HOST}/res/getRes`;
+export const API_RES_SEARCH_PATH = `${API_HOST}/res/search`;
+export const API_RES_CREATE_JOIN_PATH = `${API_HOST}/res/createJoin`;
+export const API_RES_DELETE_PATH = `${API_HOST}/res/delete`;
