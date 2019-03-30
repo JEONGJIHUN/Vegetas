@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './InitialHomeCss';
-import API_USER_SIGNIN_PATH from '../../constants';
+import { API_USER_SIGNIN_PATH } from '../../constants';
 
 class InitialHome extends React.Component {
   static navigationOptions = {

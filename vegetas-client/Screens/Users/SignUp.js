@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './SignUpCss';
-import API_USER_SIGNUP_PATH from '../../constants';
+import { API_USER_SIGNUP_PATH } from '../../constants';
 
 class SignUp extends React.Component {
   static navigationOptions = {

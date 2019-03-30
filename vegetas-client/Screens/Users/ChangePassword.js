@@ -5,7 +5,7 @@ import {
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import styles from './ChangePasswordCss';
-import API_USER_PWUDATE_PATH from '../../constants';
+import { API_USER_PWUDATE_PATH } from '../../constants';
 
 export default class ChangePassword extends React.Component {
   static navigationOptions = {

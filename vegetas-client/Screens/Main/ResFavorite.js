@@ -4,7 +4,7 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import MainRestaurantInfo from './MainRestaurantInfo';
 import styles from './ResFavoriteCss';
-import API_RES_JOIN_PATH from '../../constants';
+import { API_RES_JOIN_PATH } from '../../constants';
 
 export default class ResFavorites extends React.Component {
   static navigationOptions = {
