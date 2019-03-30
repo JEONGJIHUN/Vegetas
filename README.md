@@ -29,8 +29,7 @@ $ npm install
 
 1. `root`(VEGETAS), 클라이언트, 서버 폴더 별로 `npm install` or `yarn`으로 설치합니다.
 
-```shell
-$ npm install
+```
 $ cd vegetas-client
 $ npm install
 $ cd ../vegetas-server ( 또는 `root`(VEGETAS)에서 cd vegetas-server )
@@ -40,8 +39,6 @@ $ npm install
 2. 각 폴더 별로 npm start 를 실행합니다.
 
 ### Package Dependencies
-
-These are installed when running `yarn` or `npm install`
 
 - [axios](https://www.npmjs.com/package/axios)
 - [geolib](https://www.npmjs.com/package/geolib)
@@ -53,4 +50,6 @@ These are installed when running `yarn` or `npm install`
 
 ## Project Description
 
--
+- 회원가입/로그인 후 유저에게 맞는 채식 유형을 선택하고 해당 위치에서 거리 별로 식당 데이터를 가져옵니다.
+- 지도 맵을 활용해 현재 위치를 중심으로 식당 위치를 파악할 수 있습니다.
+- 자주 가는 식당을 즐겨찾기에 추가할 수 있습니다.
