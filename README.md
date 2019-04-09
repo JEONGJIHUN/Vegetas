@@ -15,11 +15,11 @@
 
 - `root`(VEGETAS), 클라이언트, 서버 폴더 별로 `npm install` or `yarn`으로 설치합니다.
 
-```
-$ cd vegetas-client
-$ npm install
-$ npm start
-```
+  ```
+  $ cd vegetas-client
+  $ npm install
+  $ npm start
+  ```
 
 ### Package Dependencies
 
