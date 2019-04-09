@@ -1,15 +1,17 @@
 # Vegetas
 
-**채식 식당을 찾아주는 어플리케이션**
+**채식 식당 위치 알림 모바일 어플리케이션입니다.**
 
-## 기본 환경 설치
+서울 경기권을 중심으로 채식을 즐길 수 있는 식당 위치를 검색할 수 있습니다.
+
+### 기본 환경 설치
 
 <ul>
-<li>node@latest</li>
 <li>yarn@latest</li>
+<li>node@latest</li>
 </ul>
 
-### 패키지 설치
+### Package Install
 
 - `root`(VEGETAS), 클라이언트, 서버 폴더 별로 `npm install` or `yarn`으로 설치합니다.
 
