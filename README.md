@@ -42,3 +42,47 @@
 ![vegetas-function2](https://media.giphy.com/media/jpbjd1xwD4c6aOUuqG/giphy.gif)
 
 > - 자주 가는 식당을 즐겨찾기에 추가할 수 있습니다.
+
+## Component
+
+![vegetas_component](https://user-images.githubusercontent.com/29101760/55876472-b5a10800-5bd2-11e9-89db-9ea8e7ad8acd.png)
+
+- User Page
+
+  > 비밀번호 변경/로그아웃/채식유형 변경/즐겨찾기 페이지를 나타내주는 컴포넌트
+
+- Map View
+
+  > 현재 위치에서 거리별로 식당을 나타내주는 컴포넌트
+
+- Search
+
+  > 식당과 주요 메뉴를 검색할 수 있는 기능
+
+- Change Distance
+
+  > 거리 별로 식당을 나타내주는 기능
+
+- MainRestaurantInfo
+
+  > 거리 별로 필터된 데이터를 나타내주는 컴포넌트
+
+- RestaurantDetails
+
+  > 각 식당 별 상세 내역을 나타내주는 컴포넌트
+
+- Favorite Restaurant
+
+  > 즐겨찾기 기능
+
+- Current Restaurant Position
+
+  > 현재 식당 위치를 나타내주는 기능
+
+- Restaurant Phone Number
+
+  > 현재 식당으로 연락할 수 있는 기능
+
+## DB Schema
+
+![vegetas db schema](https://user-images.githubusercontent.com/29101760/55860794-f89db400-5baf-11e9-83c2-449e31f9df3f.png)
